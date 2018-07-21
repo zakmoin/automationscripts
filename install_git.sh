@@ -12,7 +12,7 @@ gituseremail=$2
 echo "[Install Git] Install Git"
 sudo apt-get install -y git-core
 
-# Install Ansible Dependencies
+# Configure Git user details
 echo '[Install Git] Configure Git'
 git config --global user.email $gituseremail
 git config --global user.name $gitusername
