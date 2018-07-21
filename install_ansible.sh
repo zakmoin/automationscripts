@@ -13,8 +13,7 @@ echo "[Install Ansible] Install Git"
 sudo apt-get install -y git-core
 
 # Install Ansible Dependencies
-echo '[Install Ansible] Install dependencies'
-sudo apt-get install -y python-setuptools
+echo '[Install Ansible] Install Dependencies'
 sudo easy_install jinja2 
 sudo easy_install pyyaml
 sudo easy_install paramiko
