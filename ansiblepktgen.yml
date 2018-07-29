@@ -1,0 +1,22 @@
+- name: example copying file with owner and permissions
+  copy:
+          src: /tmp/testpackets
+          dest: /tmp/testpackets
+          owner: bro
+          group: bro
+          mode: 0644
+
+- name: example copying file with owner and permissions
+  copy:
+          src: /tmp/trafficgenerator.sh
+          dest: /tmp/trafficgenerator.sh
+          owner: bro
+          group: bro
+          mode: 0744
+
+- pip:
+    name: ScapyTrafficGenerator
+
+- cron:
+        name: packetgenerator
+        job: "/tmp/trafficgenerator.sh"
